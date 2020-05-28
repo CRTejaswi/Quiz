@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: Quiz</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <style type="text/css">
+        @font-face {
+            font-family: "Computer Modern";
+            src: url('resources/fonts/cmunrm.otf') format("opentype");
+        }
+        @font-face {
+            font-family: "Computer Modern";
+            src: url('resources/fonts/cmunrb.otf') format("opentype");
+            font-weight: bold;
+        }
+        body {
+            font-family: "Computer Modern", serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz">
+        <div class="question" id="question">
+            <h3 class="question_title" id="title"></h3>
+            <div class="question_answers" id="answers"></div>
+            <div class="question_actions">
+                <button class="btn" id="btn_submit">Submit</button>
+                <button class="btn hide" id="btn_next">Next</button>
+            </div>
+        </div>
+
+        <div class="score hide" id="scores">
+            You scored: <span id="score"></span>
+        </div>
+    </div>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
